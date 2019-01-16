@@ -128,6 +128,7 @@ img {
 .mars {
   text-transform: uppercase;
   color: white;
+  position: relative;
 }
 .main-name {
   text-align: center;
@@ -148,6 +149,12 @@ img {
 .mars img {
   display: block;
   margin: 0 auto;
+}
+.mars-paragraph {
+  position: absolute;
+    top: 50%;
+    right: 50px;
+    width: 100px;
 }
 .facts {
   background-color: #fff5f8;
@@ -197,12 +204,12 @@ img {
   font-family: "Proxima Nova Light";
   font-size: 14px;
   line-height: 24px;
-  padding-bottom: 300px;
+  padding-bottom: 235px;
   margin-bottom: 120px;
 }
 .title {
   font-family: "Proxima Nova Bold";
-  font-size: 60px;
+  font-size: 59px;
   line-height: 60px;
   color: #e12457;
   margin-bottom: 20px;
@@ -210,6 +217,10 @@ img {
 .information-wrapper {
   display: flex;
   padding-right: 220px;
+  width: 80%;
+}
+.information span {
+  display: block;
 }
 .small-title {
   font-family: "Proxima Nova Bold";
@@ -218,10 +229,76 @@ img {
   color: black;
 }
 .what {
-  margin-right: 60px;
+  margin-right: 70px;
+  width: 50%;
+}
+.where {
+  width: 40%;
 }
 .ilon-wrapper {
   display: flex;
+}
+.ilon-wrapper img {
+  margin-left: 40px;
+}
+.problems {
+  background-color: rebeccapurple;
+  background-image: url("../img/space.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  padding: 50px 0;
+  color: white;
+}
+.problems .title {
+  margin-bottom: 60px;
+  color: white;
+}
+.problems .small-title {
+  color: white;
+}
+.problems img {
+  position: relative;
+}
+.problems img::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  background-image: url("../img/play.png"); 
+  position: absolute;
+}
+.problems-wrapper {
+  display: flex;
+}
+.problem-labels {
+  display: flex;
+  flex-direction: column;
+}
+.problem-labels label {
+  cursor: pointer;
+}
+.problem-list {
+  padding: 0;
+}
+.problem {
+  display: none;
+}
+.problem-radio-1:checked ~ .problem-list .problem-item-1,
+.problem-radio-2:checked ~ .problem-list .problem-item-2,
+.problem-radio-3:checked ~ .problem-list .problem-item-3,
+.problem-radio-4:checked ~ .problem-list .problem-item-4 {
+  display: block;
+}
+.organize {
+  display: none;
+}
+.organization-radio-1:checked ~ .organization-list .organization-item-1,
+.organization-radio-2:checked ~ .organization-list .organization-item-2,
+.organization-radio-3:checked ~ .organization-list .organization-item-3,
+.organization-radio-4:checked ~ .organization-list .organization-item-4,
+.organization-radio-5:checked ~ .organization-list .organization-item-5 {
+  display: block;
 }
 .main-footer {
   height: 850px;
