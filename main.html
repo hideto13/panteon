@@ -20,12 +20,13 @@
         <div class="mars">
           <p class="main-name">Пункт назначения: <strong>Пантеон,</strong></p>
           <h1 class="main-title">Марс</h1>
-          <img src="img/video.png" width="650" height="360" alt="promo-video">
+          <div class="mars-img"><img src="img/video.png" width="650" height="360" alt="promo-video"></div>
           <p class="mars-paragraph">Первый город на планете Марс недалеко от горы Олимп</p>
+          <button class="scroll-button" type="button"><span class="visually-hidden">Scroll</span></button>
         </div>
       </div>
     </header>
-    <main>
+    <main class="site-main">
       <section class="facts">
         <div class="container">
           <ul class="facts-list">
@@ -39,11 +40,11 @@
             </li>
             <li class="fact-item">
               <strong>10,7%</strong>
-              массы Земли(ваш вес будет в 3 раза меньше, чем на Земле)
+              массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)
             </li>
             <li class="fact-item">
               <strong>2</strong>
-              спутника вместо луны(как картошка, только больше)
+              спутника вместо луны (как картошка, только больше)
             </li>
             <li class="fact-item">
               <strong>21 км</strong>
@@ -79,7 +80,7 @@
             <div class="ilon-wrapper">
               <div class="ilon-paragraph">
                 <h3 class="small-title">Илон Маск. Гений или безумец?</h3>
-                <span>Канадо-американский инженер, предпрениматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaseX и X.com, позже переименнованной в PayPal.
+                <span>Канадо-американский инженер, предпрениматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименнованной в PayPal.
                 Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, ученых: создать внеземную цивилизацию.
                 </span>
                 <blockquote>Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</blockquote>
@@ -91,16 +92,19 @@
           </div>
           <div class="cost">
             <h3 class="small-title">Стоимость перелета</h3>
-            <p>Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20000 раз, что составит <b>500 000 долларов</b>на человека.</p>
-            <p><b>$500 k</b>и ты на Марсе</p>
-            <a class="button">Я готов лететь!</a>
+            <p class="cost-paragraph">Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. <br>Маск стремится сократить эту цифру в 20000 раз, что составит <b>500 000 долларов</b>на человека.</p>
+            <p class="price"><b>$500 k</b> 
+              <span>и ты на Марсе</span>
+              <a class="button space-button">Я готов лететь!</a>
+            </p>
+            
           </div>
         </div>
       </section>
       <section class="problems">
         <div class="container">
           <h2 class="title">Подводные камни в масштабах космоса</h2>
-          <img src="img/video-2.jpg" width="1139" height="572" alt="problems-video">
+          <div class="problems-img"><img src="img/video-2.jpg" width="1139" height="572" alt="problems-video"></div>
           <div class="problems-wrapper">
             <input class="visually-hidden problem-radio-1" type="radio" id="problem-1" name="toggle" checked>
             <input class="visually-hidden problem-radio-2" type="radio" id="problem-2" name="toggle">
@@ -151,19 +155,8 @@
       <section class="organization">
         <div class="container">
           <h2 class="title">Организация жизни в колонии</h2>
-          <div class="problems-wrapper">
-            <div class="organization-labels">
-            <label class="organization-name-1" for="organization-1"><span>
-            Проживание</span></label>
-            <label class="organization-name-2" for="organization-2"><span>
-            Строительство</span></label>
-            <label class="organization-name-3" for="organization-3"><span>
-            Исследования</span></label>
-            <label class="organization-name-4" for="organization-4"><span>
-                Фото</span></label>
-                <label class="organization-name-5" for="organization-5"><span>
-                    Растения</span></label>
-            </div>
+          <div class="organization-wrapper">
+            
             <input class="visually-hidden organization-radio-1" type="radio" id="organization-1" name="toggle-2" checked>
             <input class="visually-hidden organization-radio-2" type="radio" id="organization-2" name="toggle-2">
             <input class="visually-hidden organization-radio-3" type="radio" id="organization-3" name="toggle-2">
@@ -171,6 +164,18 @@
             <input class="visually-hidden organization-radio-4" type="radio" id="organization-4" name="toggle-2">
             
             <input class="visually-hidden organization-radio-5" type="radio" id="organization-5" name="toggle-2">
+            <div class="organization-labels">
+              <label class="organization-name-1" for="organization-1"><span class="label-1">
+                Проживание</span></label>
+                <label class="organization-name-2" for="organization-2"><span class="label-2">
+                Строительство</span></label>
+                <label class="organization-name-3" for="organization-3"><span class="label-3">
+                Исследования</span></label>
+                <label class="organization-name-4" for="organization-4"><span class="label-4">
+                    Фото</span></label>
+                    <label class="organization-name-5" for="organization-5"><span class="label-5">
+                        Растения</span></label>
+            </div>
             <ul class="organization-list">
               <li class="organization-item organize organization-item-1">
                 <img src="img/foto.jpg" width="985" height="457" alt="foto-1">
