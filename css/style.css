@@ -124,12 +124,24 @@ img {
     line-height: 24px;
     color: white;
   padding-right: 67px;
+  position: relative;
+}
+.menu-link::after {
+  content: "";
+  width: 50px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-image: url("../img/menu.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 .mars {
   text-transform: uppercase;
   color: white;
   position: relative;
-  padding-bottom: 105px;
+  padding-bottom: 60px;
 }
 .main-name {
   text-align: center;
@@ -153,6 +165,7 @@ img {
   width: max-content;
   margin: 0 auto;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 .mars-img::before {
   content: "Смотреть видео";
@@ -192,9 +205,24 @@ img {
   position: absolute;
 }
 .scroll-button {
-  padding: 30px;
+  padding:  27px 37px;
   background-color: #e12457;
   border-radius: 50%;
+  position: relative;
+  top: -35px;
+  border: none;
+  cursor: pointer;
+}
+.scroll-button::after {
+  content: "";
+  width: 30px;
+    height: 30px;
+    top: 25px;
+    right: 20px;
+  position: absolute;
+  background-image: url("../img/scroll.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 .site-main {
   background-image: url("../img/fon.png");
@@ -297,7 +325,7 @@ img {
 .ilon-paragraph span {
   display: block;
 }
-.ilon-paragraph span:nth-child(2) {
+.ilon-paragraph span:nth-child(3) {
   margin-bottom: 10px;
 }
 .ilon blockquote {
@@ -307,14 +335,11 @@ img {
   margin: 35px 0;
   margin-bottom: 38px;
 }
-.ilon blockquote::before {
-  content: "&ldquo;";
-  width: 10px;
-  height: 10px;
-  top: -10px;
+.ilon blockquote span {
+  top: -5px;
   left: -40px;
-  background-color: #e12457;
   position: absolute;
+  font-size: 50px;
 }
 .ilon-wrapper img {
   margin-left: 45px;
@@ -326,7 +351,7 @@ img {
   background-image: url("../img/rocket.png");
   background-position: top center;
   background-repeat: no-repeat;
-  padding: 60px 40px;
+  padding: 60px;
   padding-left: 400px;
   margin-bottom: 165px;
   color: white;
@@ -339,23 +364,47 @@ img {
 }
 .cost-paragraph {
   padding-right: 30px;
+  margin-bottom: 23px;
+}
+.cost-paragraph b {
+  font-family: "Proxima Nova Semibold";
 }
 .price {
   font-family: "Proxima Nova Thin";
   font-size: 24px;
   line-height: 24px;
   display: flex;
+  justify-content: space-between;
+  margin: 0;
+  align-items: center;
 }
 .price b {
   font-size: 60px;
+  
+}
+.price span {
+  position: relative;
+  margin-right: 60px;
+  top: -7px;
+}
+.price span::after {
+  content: "";
+  width: 200px;
+  height: 1px;
+  bottom: -5px;
+  left: 0;
+  position: absolute;
+  background-color: white;
 }
 .space-button {
-  padding: 18px 50px;
+  padding: 17px 35px;
     background-color: #ffffff;
     color: #b264a4;
     box-shadow: 0 0 20px 5px #fffefec7;
     border-radius: 30px;
   cursor: pointer;
+  font-size: 18px;
+    font-family: "Proxima Nova Semibold";
 }
 .problems {
   background-color: rebeccapurple;
@@ -365,6 +414,8 @@ img {
   padding: 53px 0;
   color: white;
   padding-bottom: 70px;
+  line-height: 24px;
+  font-family: "Proxima Nova Light";
 }
 .problems .title {
   margin-bottom: 60px;
@@ -401,7 +452,59 @@ img {
 }
 .problem-labels label {
   cursor: pointer;
-  padding: 25px 0;
+  padding: 22px 0;
+  position: relative;
+  color: #908bb1;
+  
+}
+.problem-labels label::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: 25px;
+  right: 0;
+  background-image: url("../img/element.png"); 
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+}
+.problem-labels label:hover,
+.problem-labels label:focus {
+font-family: "Proxima Nova Semibold";
+color: white;
+}
+.problem-labels label:hover::after,
+.problem-labels label:focus::after {
+  content: "";
+  width: 30px;
+  height: 20px;
+  top: 25px;
+  right: 0;
+  background-image: url("../img/element-active.png"); 
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+}
+.problem-radio-1:checked ~ .problem-labels .problem-name-1,
+.problem-radio-2:checked ~ .problem-labels .problem-name-2,
+.problem-radio-3:checked ~ .problem-labels .problem-name-3,
+.problem-radio-4:checked ~ .problem-labels .problem-name-4 {
+  font-family: "Proxima Nova Semibold";
+  color: white;
+}
+.problem-radio-1:checked ~ .problem-labels .problem-name-1::after,
+.problem-radio-2:checked ~ .problem-labels .problem-name-2::after,
+.problem-radio-3:checked ~ .problem-labels .problem-name-3::after,
+.problem-radio-4:checked ~ .problem-labels .problem-name-4::after {
+  content: "";
+  width: 30px;
+  height: 20px;
+  top: 25px;
+  right: 0;
+  background-image: url("../img/element-active.png"); 
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
 }
 .problem-list {
   padding: 0;
@@ -410,6 +513,7 @@ img {
 }
 .problem-item span {
   display: block;
+  margin-bottom: 15px;
 }
 .problem {
   display: none;
@@ -422,7 +526,8 @@ img {
 }
 .organization {
   padding: 55px 0;
-  padding-bottom: 190px;
+  padding-bottom: 160px;
+  line-height: 24px;
 }
 .organization .title {
   margin-bottom: 50px;
@@ -463,7 +568,7 @@ img {
   content: "";
   width: 15px;
   height: 15px;
-  top: 14px;
+  top: 16px;
   right: -40px;
   position: absolute;
   background-color: #e12457;
@@ -474,7 +579,7 @@ img {
   content: "";
   width: 15px;
   height: 15px;
-  top: 14px;
+  top: 16px;
   right: -60px;
   position: absolute;
   background-color: #e12457;
@@ -485,7 +590,7 @@ img {
   content: "";
   width: 15px;
   height: 15px;
-  top: 14px;
+  top: 16px;
   right: -55px;
   position: absolute;
   background-color: #e12457;
@@ -496,7 +601,7 @@ img {
   content: "";
   width: 15px;
   height: 15px;
-  top: 14px;
+  top: 16px;
   right: 10px;
   position: absolute;
   background-color: #e12457;
@@ -507,8 +612,8 @@ img {
   content: "";
   width: 15px;
   height: 15px;
-  top: 14px;
-  right: 110px;
+  top: 16px;
+  right: 100px;
   position: absolute;
   background-color: #e12457;
   border-radius: 50%;
@@ -571,7 +676,7 @@ img {
   width: 30px;
   height: 30px;
   top: 55px;
-  right: 110px;
+  right: 100px;
   background-image: url("../img/Leaves.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -608,6 +713,20 @@ img {
 .organization-radio-4:checked ~ .organization-list .organization-item-4,
 .organization-radio-5:checked ~ .organization-list .organization-item-5 {
   display: block;
+}
+.organization-item img {
+  margin-bottom: 15px;
+}
+.organization-item .small-title {
+  margin-bottom: 10px;
+}
+.organization-item p {
+  margin-bottom: 50px;
+}
+.button-more {
+  background-color: #e12457;
+    padding: 13px 37px;
+    border-radius: 30px;
 }
 .main-footer {
   height: 850px;
