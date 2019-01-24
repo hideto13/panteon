@@ -99,14 +99,20 @@ img {
   background-color: ;
 }
 .header-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 37px 0;
   margin-bottom: 150px;
 }
 .logo {
   line-height: 21px;
   font-family: "Proxima Nova Thin";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 190px;
 }
@@ -162,6 +168,8 @@ img {
 }
 .mars-img {
   position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   margin: 0 auto;
   cursor: pointer;
@@ -234,9 +242,12 @@ img {
 }
 .facts-list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 20px 0;
   margin-left: -35px;
@@ -290,6 +301,8 @@ img {
   margin-bottom: 20px;
 }
 .information-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-right: 220px;
   width: 80%;
@@ -320,6 +333,8 @@ img {
   line-height: 24px;
 }
 .ilon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .ilon-paragraph span {
@@ -344,7 +359,10 @@ img {
 .ilon-wrapper img {
   margin-left: 45px;
   margin-top: 20px;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  width: 100%;
 }
 .cost {
   background-color: white;
@@ -373,10 +391,16 @@ img {
   font-family: "Proxima Nova Thin";
   font-size: 24px;
   line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .price b {
   font-size: 60px;
@@ -400,7 +424,8 @@ img {
   padding: 17px 35px;
     background-color: #ffffff;
     color: #b264a4;
-    box-shadow: 0 0 20px 5px #fffefec7;
+    -webkit-box-shadow: 0 0 20px 5px #fffefec7;
+            box-shadow: 0 0 20px 5px #fffefec7;
     border-radius: 30px;
   cursor: pointer;
   font-size: 18px;
@@ -429,7 +454,8 @@ img {
   cursor: pointer;
 }
 .problems img {
-  filter: contrast(1.5) brightness(0.7);
+  -webkit-filter: contrast(1.5) brightness(0.7);
+          filter: contrast(1.5) brightness(0.7);
 }
 .problems-img::after {
   content: "";
@@ -441,12 +467,19 @@ img {
   position: absolute;
 }
 .problems-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 48px 0;
 }
 .problem-labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 20%;
   margin-right: 60px;
 }
@@ -533,6 +566,8 @@ color: white;
   margin-bottom: 50px;
 }
 .organization-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .organization-labels {
@@ -556,7 +591,9 @@ color: white;
   position: relative;
 }
 .organization-labels span {
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   display: block;
   position: relative;
   visibility: hidden;
@@ -630,7 +667,9 @@ color: white;
   background-repeat: no-repeat;
   position: absolute;
   visibility: visible;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .label-2::after {
   content: "";
@@ -643,7 +682,9 @@ color: white;
   background-repeat: no-repeat;
   position: absolute;
   visibility: visible;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .label-3::after {
   content: "";
@@ -656,7 +697,9 @@ color: white;
   background-repeat: no-repeat;
   position: absolute;
   visibility: visible;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .label-4::after {
   content: "";
@@ -669,7 +712,9 @@ color: white;
   background-repeat: no-repeat;
   position: absolute;
   visibility: visible;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .label-5::after {
   content: "";
@@ -682,7 +727,9 @@ color: white;
   background-repeat: no-repeat;
   position: absolute;
   visibility: visible;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 .organization-name-2 {
   top:40px;
